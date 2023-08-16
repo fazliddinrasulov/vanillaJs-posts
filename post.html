@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Vanilla JS Post API</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <style>
+    .post,
+    .comments-list {
+      width: 80%;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .img {
+      width: 100%;
+    }
+    .liked {
+      background-color: #0dcaf0;
+      color: #000;
+    }
+    .disliked {
+      background-color: #dc3545;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+          <div class="container-fluid">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60"
+              width="60"
+              height="60"
+            >
+              <path
+                d="M15,45 L45,45 L45,15 C45,7.5 38.5,1 30,1 C21.5,1 15,7.5 15,15 L15,45 Z"
+                fill="#aaa"
+              />
+              <text
+                x="19"
+                y="34"
+                fill="#75E6DA"
+                font-family="Arial, sans-serif"
+                font-size="30"
+              >
+                R
+              </text>
+            </svg>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active private" aria-current="page" href="#"
+                    >My Posts</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active private" aria-current="page" href="#"
+                    >New Post</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active login" aria-current="page" href="./login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="" class="btn btn-outline-info me-2 user-link">User</a>
+                <button class="logout-btn btn btn-danger" type="submit">LogOut</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- <div class="post">
+          <h1 class="text-center text-info my-3">Post You Chose</h1>
+          <img src="./images/favicon.ico" class="d_block mx-auto" alt="post_image" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem
+            consequuntur rem autem, doloribus laboriosam magni sed nostrum officiis aut
+            consequatur. Alias voluptate vel minima adipisci perspiciatis neque commodi
+            nulla!
+          </p>
+          <small>12.07.2020 </small>
+          <blockquote>User</blockquote>
+          <div class="btn btn-outline-info">12 Likes</div>
+          <div class="btn btn-outline-danger">5 Disikes</div>
+          <div class="btn btn-outline-success">35 Comments</div>
+        </div> -->
+      </div>
+      <div class="container my-5 comments-list list-unstyled">
+        <!-- <ul class="comments-list list-unstyled">
+          <li>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta aperiam ad
+              sequi?
+            </p>
+            <blockquote>Jhon Doe</blockquote>
+            <small>12</small>
+            <hr />
+          </li>
+        </ul> -->
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/post.js "></script>
+  </body>
+</html>
